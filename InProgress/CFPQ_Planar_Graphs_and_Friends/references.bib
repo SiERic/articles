@@ -231,3 +231,63 @@ numpages = {11},
 location = {Eilat, Israel},
 series = {ESA'07}
 }
+
+
+
+@article{10.1145/3158118,
+author = {Chatterjee, Krishnendu and Choudhary, Bhavya and Pavlogiannis, Andreas},
+title = {Optimal Dyck Reachability for Data-Dependence and Alias Analysis},
+year = {2017},
+issue_date = {January 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {2},
+number = {POPL},
+url = {https://doi.org/10.1145/3158118},
+doi = {10.1145/3158118},
+abstract = {A fundamental algorithmic problem at the heart of static analysis is Dyck reachability. The input is a graph where the edges are labeled with different types of opening and closing parentheses, and the reachability information is computed via paths whose parentheses are properly matched. We present new results for Dyck reachability problems with applications to alias analysis and data-dependence analysis. Our main contributions, that include improved upper bounds as well as lower bounds that establish optimality guarantees, are as follows: First, we consider Dyck reachability on bidirected graphs, which is the standard way of performing field-sensitive points-to analysis. Given a bidirected graph with n nodes and m edges, we present: (i)&nbsp;an algorithm with worst-case running time O(m + n · α(n)), where α(n) is the inverse Ackermann function, improving the previously known O(n2) time bound; (ii)&nbsp;a matching lower bound that shows that our algorithm is optimal wrt to worst-case complexity; and (iii)&nbsp;an optimal average-case upper bound of O(m) time, improving the previously known O(m · logn) bound. Second, we consider the problem of context-sensitive data-dependence analysis, where the task is to obtain analysis summaries of library code in the presence of callbacks. Our algorithm preprocesses libraries in almost linear time, after which the contribution of the library in the complexity of the client analysis is only linear, and only wrt the number of call sites. Third, we prove that combinatorial algorithms for Dyck reachability on general graphs with truly sub-cubic bounds cannot be obtained without obtaining sub-cubic combinatorial algorithms for Boolean Matrix Multiplication, which is a long-standing open problem. Thus we establish that the existing combinatorial algorithms for Dyck reachability are (conditionally) optimal for general graphs. We also show that the same hardness holds for graphs of constant treewidth. Finally, we provide a prototype implementation of our algorithms for both alias analysis and data-dependence analysis. Our experimental evaluation demonstrates that the new algorithms significantly outperform all existing methods on the two problems, over real-world benchmarks.},
+journal = {Proc. ACM Program. Lang.},
+month = dec,
+articleno = {30},
+numpages = {30},
+keywords = {Bidirected graphs, Dyck reachability, Data-dependence analysis, treewidth, CFL reachability}
+}
+
+@inproceedings{10.1145/2491956.2462159,
+author = {Zhang, Qirun and Lyu, Michael R. and Yuan, Hao and Su, Zhendong},
+title = {Fast Algorithms for Dyck-CFL-Reachability with Applications to Alias Analysis},
+year = {2013},
+isbn = {9781450320146},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2491956.2462159},
+doi = {10.1145/2491956.2462159},
+abstract = {The context-free language (CFL) reachability problem is a well-known fundamental formulation in program analysis. In practice, many program analyses, especially pointer analyses, adopt a restricted version of CFL-reachability, Dyck-CFL-reachability, and compute on edge-labeled bidirected graphs. Solving the all-pairs Dyck-CFL-reachability on such bidirected graphs is expensive. For a bidirected graph with n nodes and m edges, the traditional dynamic programming style algorithm exhibits a subcubic time complexity for the Dyck language with k kinds of parentheses. When the underlying graphs are restricted to bidirected trees, an algorithm with O(n log n log k) time complexity was proposed recently. This paper studies the Dyck-CFL-reachability problems on bidirected trees and graphs. In particular, it presents two fast algorithms with O(n) and O(n + m log m) time complexities on trees and graphs respectively. We have implemented and evaluated our algorithms on a state-of-the-art alias analysis for Java. Results on standard benchmarks show that our algorithms achieve orders of magnitude speedup and consume less memory.},
+booktitle = {Proceedings of the 34th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {435–446},
+numpages = {12},
+keywords = {alias analysis, dyck-cfl-reachability},
+location = {Seattle, Washington, USA},
+series = {PLDI '13}
+}
+
+@article{10.1145/2499370.2462159,
+author = {Zhang, Qirun and Lyu, Michael R. and Yuan, Hao and Su, Zhendong},
+title = {Fast Algorithms for Dyck-CFL-Reachability with Applications to Alias Analysis},
+year = {2013},
+issue_date = {June 2013},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {48},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/2499370.2462159},
+doi = {10.1145/2499370.2462159},
+abstract = {The context-free language (CFL) reachability problem is a well-known fundamental formulation in program analysis. In practice, many program analyses, especially pointer analyses, adopt a restricted version of CFL-reachability, Dyck-CFL-reachability, and compute on edge-labeled bidirected graphs. Solving the all-pairs Dyck-CFL-reachability on such bidirected graphs is expensive. For a bidirected graph with n nodes and m edges, the traditional dynamic programming style algorithm exhibits a subcubic time complexity for the Dyck language with k kinds of parentheses. When the underlying graphs are restricted to bidirected trees, an algorithm with O(n log n log k) time complexity was proposed recently. This paper studies the Dyck-CFL-reachability problems on bidirected trees and graphs. In particular, it presents two fast algorithms with O(n) and O(n + m log m) time complexities on trees and graphs respectively. We have implemented and evaluated our algorithms on a state-of-the-art alias analysis for Java. Results on standard benchmarks show that our algorithms achieve orders of magnitude speedup and consume less memory.},
+journal = {SIGPLAN Not.},
+month = jun,
+pages = {435–446},
+numpages = {12},
+keywords = {dyck-cfl-reachability, alias analysis}
+}
+
